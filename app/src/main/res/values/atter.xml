@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CycleProgress">
+        <attr name="circleBgStrokeWidth" format="dimension" />  <!--圈的宽度 -->
+        <attr name="progressStrokeWidth" format="dimension" />  <!--进度条的宽度 -->
+
+        <attr name="circleBgColor" format="color" />    <!--圈的颜色 -->
+        <attr name="progressColor" format="color" />    <!--进度条的颜色 -->
+
+        <attr name="circleAnimationDuration" format="integer" />  <!--进度条时长 -->
+
+        <attr name="isDrawCenterProgressText" format="boolean" /> <!--是否显示圈内文字 -->
+
+        <attr name="centerProgressTextColor" format="color"/>  <!--圈内文字的颜色 -->
+        <attr name="centerProgressTextSize" format="dimension"/> <!--圈内文字的大小 -->
+    </declare-styleable>
+</resources>

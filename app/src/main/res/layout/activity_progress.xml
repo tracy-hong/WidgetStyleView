@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cyclepb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hong.widgetstyle.ui.widget.CycleProgress
+        android:id="@+id/cycle_progress"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        cyclepb:centerProgressTextColor="@color/colorAccent"
+        cyclepb:circleBgStrokeWidth="10dp"
+        cyclepb:progressStrokeWidth="10dp"
+        cyclepb:centerProgressTextSize="14sp"
+        cyclepb:isDrawCenterProgressText="true"/>
+</RelativeLayout>
