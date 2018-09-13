@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <com.hong.widgetstyle.ui.widget.CycleProgress
+        android:layout_centerInParent="true"
         android:id="@+id/cycle_progress"
         android:layout_width="match_parent"
         android:layout_height="150dp"

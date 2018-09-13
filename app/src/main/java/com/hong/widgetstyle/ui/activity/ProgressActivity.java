@@ -25,7 +25,7 @@ public class ProgressActivity extends AppCompatActivity{
 
     private void initView() {
         cycleProgress = (CycleProgress) findViewById(R.id.cycle_progress);
-        cycleProgress.setAnimator(100    );
+        cycleProgress.setAnimator(100);
         cycleProgress.startAnimator();
     }
 

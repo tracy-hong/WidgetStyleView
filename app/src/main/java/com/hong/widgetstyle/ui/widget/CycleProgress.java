@@ -98,8 +98,8 @@ public class CycleProgress extends View {
         isProgressText = typedArray.getBoolean(R.styleable.CycleProgress_isDrawCenterProgressText, false);
         centerTextColor = typedArray.getColor(R.styleable.CycleProgress_centerProgressTextColor, mContext.getResources().getColor(R.color.colorAccent));
         centerTextSize = typedArray.getDimensionPixelOffset(R.styleable.CycleProgress_centerProgressTextSize, 16);
-        cycleBgColor = typedArray.getColor(R.styleable.CycleProgress_circleBgColor, 0xFFe1e5e8);
-        progressColor = typedArray.getColor(R.styleable.CycleProgress_progressColor, 0xFFf66b12);
+        cycleBgColor = typedArray.getColor(R.styleable.CycleProgress_circleBgColor, mContext.getResources().getColor(R.color.colorPrimary));
+        progressColor = typedArray.getColor(R.styleable.CycleProgress_progressColor, mContext.getResources().getColor(R.color.colorAccent));
 
         typedArray.recycle();
     }
@@ -130,8 +130,8 @@ public class CycleProgress extends View {
     private void initTextPaint() {
         centerTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         centerTextPaint.setColor(centerTextColor);
-        centerTextPaint.setTextAlign(Paint.Align.CENTER);
-        centerTextPaint.setTextSize(centerTextSize);
+        centerTextPaint.setTextAlign(Paint.Align.CENTER);  // 设置文字位置在中间
+        centerTextPaint.setTextSize(centerTextSize);  // 设置文字大小
         centerTextPaint.setAntiAlias(true);
     }
 
@@ -161,7 +161,7 @@ public class CycleProgress extends View {
     }
 
     /**
-     * d大小发生改变的时候调用
+     * view发生改变的时候调用
      * @param w
      * @param h
      * @param oldw
